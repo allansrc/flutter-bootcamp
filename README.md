@@ -18,28 +18,20 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (context) => MyAppState(),
-      child: MaterialApp(
+    return MaterialApp(
         title: 'RandomApp',
         theme: ThemeData(
           useMaterial3: true,
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
         ),
         home: MyHomePage(),
-      ),
     );
   }
-}
-
-class MyAppState extends ChangeNotifier {
-  var current = WordPair.random();
 }
 
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var appState = context.watch<MyAppState>();
 
     return Scaffold(
       appBar: AppBar(
@@ -48,14 +40,10 @@ class MyHomePage extends StatelessWidget {
       ), // Final do AppBar
       body: Column(
         children: [
+          // Lista de Widgets filhos do Column
+          
           const Text('Uma ideia aleatória da hora:'),
-          Text(appState.current.asLowerCase),
-          ElevatedButton(
-            onPressed: () {
-              print('botão pressionado!');
-            },
-            child: const Text('Próximo'),
-          ),
+          
         ],
       ),// Final do Column
     );// Final do Scaffold
