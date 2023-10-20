@@ -134,6 +134,8 @@ void favorite() {
 }
 ```
 
+// Checar código completo > [Primeira Parte completa](https://github.com/allansrc/flutter-bootcamp/blob/main/part_one_completed.dart)
+
 Página / Tela de Gerador de palavras aleatórias
 ```
 class GeneratorPage extends StatelessWidget {
