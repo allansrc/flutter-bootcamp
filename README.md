@@ -51,3 +51,14 @@ class MyHomePage extends StatelessWidget {
 }
 
 ```
+
+
+Add Botão >>>
+```
+ElevatedButton(
+  onPressed: () {
+    print('Botão pressionado!');
+  },
+  child: Text('Próximo'),
+),
+```
