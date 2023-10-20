@@ -70,3 +70,12 @@ ElevatedButton(
   child: Text('Próximo'),
 ),
 ```
+
+Add método que irá alterar o estado do app, consumindo dados da biblioteca english_words:
+
+```
+  void getNext() {
+    current = WordPair.random();
+    notifyListeners();
+  }
+```
