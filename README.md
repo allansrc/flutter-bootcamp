@@ -1,5 +1,8 @@
 # flutter-bootcamp
 
+## Part 1: Criar app e funcionalidade principal
+
+
 Código Base inicial:
 
 ```
@@ -113,6 +116,9 @@ class BigCard extends StatelessWidget {
   }
 }
 ```
+
+
+## Part 2: Adicionar funcionalizades > Fav e Nav
 
 Add Método que irá favoritar e desfaforitar as palavras, e variável que irá armazenar as palavras favoritas:
 ```
