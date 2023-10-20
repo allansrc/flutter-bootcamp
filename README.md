@@ -230,3 +230,6 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 ```
+
+
+// Checar código completo > [Segunda Parte completa](https://github.com/allansrc/flutter-bootcamp/blob/main/part_two_completed.dart)
