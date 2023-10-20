@@ -47,14 +47,11 @@ class MyHomePage extends StatelessWidget {
       ), // Final do AppBar
       body: Column(
         children: [
+        // Lista de widgets filhos do Widget Column
+
           const Text('Uma ideia aleatória da hora:'),
           Text(appState.current.asLowerCase),
-          ElevatedButton(
-            onPressed: () {
-              print('botão pressionado!');
-            },
-            child: const Text('Próximo'),
-          ),
+         
         ],
       ),// Final do Column
     );// Final do Scaffold
